@@ -5,13 +5,13 @@ var browserSync     = require('../../node_modules/browser-sync/index'); // requi
 var proxyMiddleware = require('../../index');                           // require('http-proxy-middleware');
 
 // configure proxy middleware
-// context: '/' will proxy all requests
+// context: '/ws' will proxy all requests
 var proxy = proxyMiddleware('/ws', {
                 target: 'http://echo.websocket.org',
-                // pathRewrite: {
+                pathRewrite: {
                 //  '^/websocket' : '/socket',          // rewrite path.
-                //  '^/removepath' : ''                 // remove path.
-                // },
+                  '^/ws' : ''                 // remove path.
+                },
                 changeOrigin: true,                     // for vhosted sites, changes host header to match to target's host
                 ws: true                                // enable websocket proxy
             });

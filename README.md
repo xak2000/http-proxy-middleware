@@ -222,6 +222,7 @@ $ node examples/connect
  * `examples/express` - [express proxy example](https://github.com/chimurai/http-proxy-middleware/tree/master/examples/express/index.js)
  * `examples/browser-sync` - [browser-sync proxy example](https://github.com/chimurai/http-proxy-middleware/tree/master/examples/browser-sync/index.js)
  * `examples/websocket` - [websocket proxy example](https://github.com/chimurai/http-proxy-middleware/tree/master/examples/websocket/index.js) with express
+ * `examples/browser-sync-ws` - [browser-sync websocket proxy example](https://github.com/chimurai/http-proxy-middleware/tree/master/examples/browser-sync-ws/index.js)
 
 
 ### Compatible servers:

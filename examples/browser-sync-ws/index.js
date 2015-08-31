@@ -10,7 +10,7 @@ var proxy = proxyMiddleware('/ws', {
                 target: 'http://echo.websocket.org',
                 pathRewrite: {
                 //  '^/websocket' : '/socket',          // rewrite path.
-                  '^/ws' : ''                 // remove path.
+                  '^/ws' : '/'                 // remove path.
                 },
                 changeOrigin: true,                     // for vhosted sites, changes host header to match to target's host
                 ws: true                                // enable websocket proxy
